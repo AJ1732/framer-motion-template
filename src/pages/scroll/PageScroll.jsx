@@ -1,5 +1,5 @@
-import { useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
-import React, { useEffect } from 'react'
+import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
+import { useEffect, useRef } from 'react'
 
 const PageScroll = () => {
   const textRef = useRef(null);
@@ -30,6 +30,9 @@ const PageScroll = () => {
 
   return (
     <main>
+      <section className='h-dvh pt-20 flex justify-center items-start'>
+        <h2 className='font-thin text-5xl'>Scroll Down</h2>
+      </section>
        {/* TEXT SCROLL ANIMATION */}
        <section ref={textRef} className="flex flex-col gap-10 mb-10">
         <motion.h1

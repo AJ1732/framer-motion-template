@@ -1,6 +1,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-const cards = [1, 2, 3, 4, 5, 6, 7]
+
+const cards = [1, 2, 3, 4, 5, 6, 7];
 
 const HorizontalScroll = () => {
   return (
@@ -10,7 +11,7 @@ const HorizontalScroll = () => {
           Scroll down
         </span>
       </div>
-
+    
       <HorizontalScrollCarousel />
 
       <div className="flex h-48 items-center justify-center">
@@ -32,7 +33,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card} />;
@@ -55,11 +56,11 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute size-32 inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
+        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
         <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          Card {card}
+          {card}
         </p>
       </div>
     </div>

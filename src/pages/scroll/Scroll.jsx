@@ -17,9 +17,7 @@ const Scroll = () => {
         </ul>
       </nav>
 
-      <section>
-        <Outlet />
-      </section>
+      <Outlet />
     </main>
   )
 }
