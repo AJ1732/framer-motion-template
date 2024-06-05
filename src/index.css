@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+
+.content-grid {
+  /* spacing variables */
+  --padding-inline: 1.5rem;
+  --content-max-width: 1280px;
+  --breakout-max-width: 1320px;
+  --layout-max-width: 1440px;
+
+  --breakout-size: calc(
+    (var(--breakout-max-width) - var(--content-max-width)) / 2
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start]
+    minmax(var(--padding-inline), 1fr) 
+    
+    [breakout-start] 
+    minmax(0, var(--breakout-size))
+ 
+
+    [content-start] 
+    min(100% - (var(--padding-inline) * 2), var(--content-max-width)) /* choosing which is smaller */
+    [content-end]
+
+    minmax(0, var(--breakout-size)) 
+    [breakout-end]
+
+    minmax(var(--padding-inline), 1fr) 
+    [full-width-end]
+  ;
+}
+.content-grid.all {
+  grid-template-rows: 4.5rem 1fr;
+}
+.content-grid > :not(.breakout, .full-width) {
+  grid-column: content;
+}
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+.content-grid > .full-width {
+  grid-column: full-width;
+}
