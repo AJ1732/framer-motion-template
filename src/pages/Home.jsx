@@ -3,7 +3,7 @@ import Transition from '../components/Transition'
 const Home = () => {
   return (
     <main className='relative space-y-2'>
-      <section className=' h-96 max-w-80 m-auto flex justify-center items-center'>
+      <section className=' h-96 max-w-80 lg:max-w-full m-auto flex justify-center items-center'>
         {/* BLOB */}
         {/* <span 
           className='blob -z-20 size-40 absolute -left-10 -top-40 rounded-full blur-3xl'
