@@ -10,7 +10,7 @@ const RevealText = () => {
         <h2>Reveal Texts</h2>
       </section>
       
-      <section className='min-h-dvh flex flex-col sm:flex-row justify-center items-center gap-2'>
+      <section className='min-h-[calc(100dvh-12rem)] flex flex-col sm:flex-row justify-center items-center gap-2'>
         <Reveal>
           <h3 className='font-thin'>Heading One.</h3>
         </Reveal>
