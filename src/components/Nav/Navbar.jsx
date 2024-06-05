@@ -19,7 +19,6 @@ const Navbar = () => {
 
         <div 
           onMouseEnter={() => setOpen(true)} 
-          onMouseLeave={() => setOpen(false)} 
           className="relative right-0 group h-fit w-fit"
         >
           <motion.button
@@ -47,7 +46,9 @@ const Navbar = () => {
           </motion.button>
 
           {open && (
-            <div className="absolute z-50 right-0 top-full">
+            <div 
+              onMouseLeave={() => setOpen(false)} 
+              className="absolute z-50 right-0 top-[130%]">
               <DropMenu />
             </div>
           )}
