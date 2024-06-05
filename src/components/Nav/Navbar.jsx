@@ -12,7 +12,7 @@ const Navbar = () => {
         
         <h1 className="relative font-bold text-2xl">
           {/* BLOB */}
-          <span className='size-32 absolute -z-20 inset-x-0 blur-[40rem] bg-primary-500 rounded-full'></span>
+          {/* <span className='w-12 aspect-video absolute -z-20 left-20 blur-3xl bg-primary-500 rounded-full'></span> */}
 
           <NavLink to={`/`}>Framer Motion</NavLink>
         </h1>
