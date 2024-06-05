@@ -18,12 +18,12 @@
 }
 
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-}
+} */
 
 
 .content-grid {
@@ -68,4 +68,16 @@
 }
 .content-grid > .full-width {
   grid-column: full-width;
+}
+
+h1, h2, h3, h4 {
+  @apply text-primary-100;
+}
+
+a, p {
+  @apply text-primary-50;
+}
+
+.blob {
+  background-image: radial-gradient(closest-side, #F08C0036, #242424);
 }

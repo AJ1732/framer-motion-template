@@ -2,12 +2,14 @@ import Transition from '../components/Transition'
 
 const Home = () => {
   return (
-    <main className='space-y-2'>
-      <section className='relative h-96 max-w-80 m-auto flex justify-center items-center'>
+    <main className='relative space-y-2'>
+      <section className=' h-96 max-w-80 m-auto flex justify-center items-center'>
         {/* BLOB */}
-        <span className='size-10 absolute inset-x-0 blur-3xl bg-primary-500 rounded-full'></span>
+        <span 
+          className='blob -z-20 size-40 absolute left-0 -top-32 rounded-full blur-3xl'
+        ></span>
         
-        <h2 className='text-2xl text-center font-thin'>Compilation of Framer Motion styles</h2>
+        <h2 className='text-2xl text-center font-thin text-primary-100'>Compilation of Framer Motion styles</h2>
       </section>
     </main>
   )
