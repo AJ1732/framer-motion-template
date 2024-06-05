@@ -5,9 +5,9 @@ import Home from "../pages/Home";
 import Stagger from "../pages/Stagger";
 import Basic from "../pages/Basic";
 import RevealText from "../pages/RevealText";
-import Scroll from "../pages/Scroll";
-import HorizontalScroll from "../pages/HorizontalScroll";
-import PageScroll from "../pages/PageScroll";
+import Scroll from "../pages/scroll/Scroll";
+import HorizontalScroll from "../pages/scroll/HorizontalScroll";
+import PageScroll from "../pages/scroll/PageScroll";
 
 export const router = createBrowserRouter([
   {
