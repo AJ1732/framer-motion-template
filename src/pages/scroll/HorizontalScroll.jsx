@@ -8,7 +8,7 @@ const HorizontalScroll = () => {
     <div className="bg-neutral-800">
       <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
-          Scroll down
+          Working on bug of height of carousel
         </span>
       </div>
     
