@@ -11,7 +11,7 @@ const HorizontalScroll = () => {
           Working on bug of height of carousel
         </span>
       </div>
-    
+
       <HorizontalScrollCarousel />
 
       <div className="flex h-48 items-center justify-center">
@@ -33,7 +33,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-neutral-900">
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card} />;

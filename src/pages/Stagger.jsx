@@ -7,7 +7,7 @@ const gridContainerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.25,
-      delay: 0.6
+      delay: 0.6,
     },
   },
 };
@@ -21,31 +21,31 @@ const Stagger = () => {
         variants={gridContainerVariants}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-3 p-10 place-content-start gap-10"
+        className="grid grid-cols-3 place-content-start gap-10 p-10"
       >
         <motion.div
           variants={gridContainerVariants}
-          className="bg-shade-800 aspect-square rounded-lg"
+          className="aspect-square rounded-lg bg-shade-800"
         ></motion.div>
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg"
+          className="aspect-square rounded-lg bg-shade-800"
         ></motion.div>
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg"
+          className="aspect-square rounded-lg bg-shade-800"
         ></motion.div>
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg"
+          className="aspect-square rounded-lg bg-shade-800"
         ></motion.div>
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg"
+          className="aspect-square rounded-lg bg-shade-800"
         ></motion.div>
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg"
+          className="aspect-square rounded-lg bg-shade-800"
         ></motion.div>
       </motion.section>
     </main>

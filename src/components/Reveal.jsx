@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react'
-import { motion, useInView, useAnimation } from "framer-motion"
+import { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
-const Reveal = ({ children, width="fit-content" }) => {
+const Reveal = ({ children, width = "fit-content" }) => {
   const ref = useRef(null);
-  const isInVIew = useInView(ref, { once: true } );
+  const isInVIew = useInView(ref, { once: true });
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -16,7 +16,7 @@ const Reveal = ({ children, width="fit-content" }) => {
 
   return (
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
-      <motion.div 
+      <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 },
@@ -29,18 +29,18 @@ const Reveal = ({ children, width="fit-content" }) => {
       </motion.div>
 
       {/* CROOSING DIV */}
-      <motion.div 
+      <motion.div
         variants={{
           hidden: { left: 0 },
-          visible: { left: "100%" }
+          visible: { left: "100%" },
         }}
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn", delay: 0.25 }}
-        className='absolute top-1 bottom-1 left-0 right-0 bg-primary-500 z-20'
+        className="absolute bottom-1 left-0 right-0 top-1 z-20 bg-primary-500"
       ></motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Reveal
+export default Reveal;

@@ -4,28 +4,27 @@ import { NavLink } from "react-router-dom";
 import DropMenu from "./DropMenu";
 
 const Navbar = () => {
-  const [ open, setOpen ] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="full-width content-grid">
-      <nav className=" flex justify-between items-center border-b border-shade-800">
-        
-        <h1 className="relative font-bold text-2xl">
+      <nav className="flex items-center justify-between border-b border-shade-800">
+        <h1 className="relative text-2xl font-bold">
           {/* BLOB */}
           {/* <span className='w-12 aspect-video absolute -z-20 left-20 blur-3xl bg-primary-500 rounded-full'></span> */}
 
           <NavLink to={`/`}>Framer Motion</NavLink>
         </h1>
 
-        <div 
-          onMouseEnter={() => setOpen(true)} 
-          className="relative right-0 group h-fit w-fit"
+        <div
+          onMouseEnter={() => setOpen(true)}
+          className="group relative right-0 h-fit w-fit"
         >
           <motion.button
             whileTap={{ scale: 0.98 }}
             whileHover={{ backgroundColor: "#F08C00" }}
             transition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-max py-2 px-4 text-shade-900 font-semibold text-xl bg-primary-400 shadow-md rounded-lg"
+            className="w-max rounded-lg bg-primary-400 px-4 py-2 text-xl font-semibold text-shade-900 shadow-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,9 +45,10 @@ const Navbar = () => {
           </motion.button>
 
           {open && (
-            <div 
-              onMouseLeave={() => setOpen(false)} 
-              className="absolute z-50 right-0 top-[130%]">
+            <div
+              onMouseLeave={() => setOpen(false)}
+              className="absolute right-0 top-[130%] z-50"
+            >
               <DropMenu />
             </div>
           )}

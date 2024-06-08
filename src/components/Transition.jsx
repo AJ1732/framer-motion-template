@@ -5,14 +5,14 @@ const Transition = (OgComponent) => {
     <>
       <OgComponent />
       <motion.div
-        className="fixed inset-0 w-full h-dvh bg-primary-500 origin-top"
+        className="fixed inset-0 h-dvh w-full origin-top bg-primary-500"
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}
         transition={{ duration: 0.6, ease: easeInOut }}
       />
       <motion.div
-        className="fixed inset-0 w-full h-dvh bg-primary-500 origin-bottom"
+        className="fixed inset-0 h-dvh w-full origin-bottom bg-primary-500"
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 0 }}

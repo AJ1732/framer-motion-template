@@ -1,4 +1,10 @@
-import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useAnimation,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Transition from "../components/Transition";
 import { useRef } from "react";
 
@@ -39,7 +45,6 @@ const svgIconVariants = {
   },
 };
 
-
 const Basic = () => {
   const basicRef = useRef(null);
 
@@ -56,14 +61,14 @@ const Basic = () => {
         variants={gridContainerVariants}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 p-5 place-content-start gap-10"
+        className="grid grid-cols-2 place-content-start gap-10 p-5 md:grid-cols-3 xl:grid-cols-4"
       >
         {/* FADE UP */}
         <motion.div
           variants={gridContainerVariants}
-          className="bg-shade-800 aspect-square rounded-lg flex justify-center items-center p-4"
+          className="flex aspect-square items-center justify-center rounded-lg bg-shade-800 p-4"
         >
-          <div className="flex flex-col justify-between items-center gap-4">
+          <div className="flex flex-col items-center justify-between gap-4">
             <motion.h3
               variants={headerVariants}
               initial="hidden"
@@ -73,15 +78,15 @@ const Basic = () => {
               Fade Up & Down
             </motion.h3>
 
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
               <motion.div
-                className="size-12 bg-shade-200 rounded-lg"
+                className="size-12 rounded-lg bg-shade-200"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
               ></motion.div>
               <motion.div
-                className="size-12 bg-shade-200 rounded-full"
+                className="size-12 rounded-full bg-shade-200"
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
@@ -93,9 +98,9 @@ const Basic = () => {
         {/* KEYFRAMES | SHAPE SHIFTING */}
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg flex justify-center items-center p-4"
+          className="flex aspect-square items-center justify-center rounded-lg bg-shade-800 p-4"
         >
-          <div className="flex flex-col justify-between items-center gap-4">
+          <div className="flex flex-col items-center justify-between gap-4">
             <motion.h3
               variants={headerVariants}
               initial="hidden"
@@ -105,9 +110,9 @@ const Basic = () => {
               Keyframes
             </motion.h3>
 
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
               <motion.div
-                className="size-12 bg-shade-500 shadow-md rounded-lg"
+                className="size-12 rounded-lg bg-shade-500 shadow-md"
                 animate={{
                   scale: [1, 1.5, 1.5, 1],
                   rotate: [0, 90, 90, 0],
@@ -128,9 +133,9 @@ const Basic = () => {
         {/* HOVER & CLICKING */}
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg flex justify-center items-center p-4"
+          className="flex aspect-square items-center justify-center rounded-lg bg-shade-800 p-4"
         >
-          <div className="flex flex-col justify-between items-start gap-4">
+          <div className="flex flex-col items-start justify-between gap-4">
             <motion.h3
               variants={headerVariants}
               initial="hidden"
@@ -140,9 +145,9 @@ const Basic = () => {
               Hover & Clicking
             </motion.h3>
 
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
               <motion.button
-                className="w-max py-2 px-4 text-shade-900 font-semibold text-xl bg-primary-400 shadow-md rounded-lg"
+                className="w-max rounded-lg bg-primary-400 px-4 py-2 text-xl font-semibold text-shade-900 shadow-md"
                 whileTap={{ scale: 0.98 }}
                 whileHover={{ scale: 1.05, backgroundColor: "#F08C00" }}
                 transition={{ bounceDamping: 10, bounceStiffness: 600 }}
@@ -156,9 +161,9 @@ const Basic = () => {
         {/* SCROLL PROGRESS */}
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg flex justify-center items-center p-4"
+          className="flex aspect-square items-center justify-center rounded-lg bg-shade-800 p-4"
         >
-          <div className="flex flex-col justify-between items-start gap-4">
+          <div className="flex flex-col items-start justify-between gap-4">
             <motion.h3
               variants={headerVariants}
               initial="hidden"
@@ -168,9 +173,9 @@ const Basic = () => {
               Scroll
             </motion.h3>
 
-            <motion.div className="size-20 bg-shade-500/20 rounded-xl">
+            <motion.div className="size-20 rounded-xl bg-shade-500/20">
               <motion.div
-                className="size-full bg-primary-400 rounded-xl h-full origin-bottom"
+                className="size-full h-full origin-bottom rounded-xl bg-primary-400"
                 style={{ scaleY: completionProgress }}
               ></motion.div>
             </motion.div>
@@ -180,9 +185,9 @@ const Basic = () => {
         {/* DRAG */}
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg  flex justify-center items-center p-4"
+          className="flex aspect-square items-center justify-center rounded-lg bg-shade-800 p-4"
         >
-          <div className="flex flex-col justify-between items-start gap-4">
+          <div className="flex flex-col items-start justify-between gap-4">
             <motion.h3
               variants={headerVariants}
               initial="hidden"
@@ -192,9 +197,9 @@ const Basic = () => {
               Drag
             </motion.h3>
 
-            <div className="flex justify-center items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
               <motion.div
-                className="size-12 text-shade-900 font-semibold text-xl bg-primary-500 shadow-md rounded-lg"
+                className="size-12 rounded-lg bg-primary-500 text-xl font-semibold text-shade-900 shadow-md"
                 drag
                 dragConstraints={{
                   top: -80,
@@ -211,9 +216,9 @@ const Basic = () => {
         {/* SVG ANIMATION */}
         <motion.div
           variants={gridSquareVariants}
-          className="bg-shade-800 aspect-square rounded-lg flex justify-center items-center p-4"
+          className="flex aspect-square items-center justify-center rounded-lg bg-shade-800 p-4"
         >
-          <div className="flex flex-col justify-between items-center gap-4">
+          <div className="flex flex-col items-center justify-between gap-4">
             <motion.h3
               variants={headerVariants}
               initial="hidden"

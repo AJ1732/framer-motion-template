@@ -1,25 +1,30 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import Transition from '../../components/Transition'
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
+import Transition from "../../components/Transition";
 
 const Scroll = () => {
   return (
-    <main className='space-y-4'>
+    <main className="space-y-4">
       <nav>
-        <ul className='flex justify-start items-center divide-x divide-shade-800 border-b border-shade-800 pb-4 [&>*]:px-5'>
-          <Link to={`/scroll/horizontal`} className='hover:bg-zinc-700 active:bg-primary-500 rounded-lg py-2 transition-all duration-300 ease-in-out'>
+        <ul className="flex items-center justify-start divide-x divide-shade-800 border-b border-shade-800 pb-4 [&>*]:px-5">
+          <Link
+            to={`/scroll/horizontal`}
+            className="rounded-lg py-2 transition-all duration-300 ease-in-out hover:bg-zinc-700 active:bg-primary-500"
+          >
             <li>Horizontal Scroll</li>
           </Link>
-          <Link to={`/scroll/page`} className='hover:bg-zinc-700 active:bg-primary-500 rounded-lg py-2 transition-all duration-300 ease-in-out'>
+          <Link
+            to={`/scroll/page`}
+            className="rounded-lg py-2 transition-all duration-300 ease-in-out hover:bg-zinc-700 active:bg-primary-500"
+          >
             <li>Page Scroll</li>
           </Link>
-
         </ul>
       </nav>
 
       <Outlet />
     </main>
-  )
-}
+  );
+};
 
-export default Transition(Scroll)
+export default Transition(Scroll);

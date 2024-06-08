@@ -41,7 +41,9 @@ export const router = createBrowserRouter([
         children: [
           {
             path: "/scroll",
-            element: <p className="font-thin">Click on any of the Tabs above</p>,
+            element: (
+              <p className="font-thin">Click on any of the Tabs above</p>
+            ),
           },
           {
             path: "/scroll/horizontal",
@@ -51,7 +53,7 @@ export const router = createBrowserRouter([
             path: "/scroll/page",
             element: <PageScroll />,
           },
-        ]
+        ],
       },
       {
         path: "/*",
