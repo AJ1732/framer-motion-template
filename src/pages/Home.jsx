@@ -10,7 +10,7 @@ const Home = () => {
         ></span> */}
 
         <h2 className="text-center text-2xl font-thin text-primary-100">
-          Compilation of Framer Motion styles
+          Compilation of Framer Motion Animation Components
         </h2>
       </section>
     </main>
