@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import Transition from "../../components/Transition";
+import Transition from "../../components/ui/Transition";
 
 const Scroll = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Reveal from "../components/Reveal";
-import Transition from "../components/Transition";
+import Reveal from "../components/ui/Reveal";
+import Transition from "../components/ui/Transition";
 
 const RevealText = () => {
   return (

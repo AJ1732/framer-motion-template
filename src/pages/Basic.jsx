@@ -5,7 +5,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import Transition from "../components/Transition";
+import Transition from "../components/ui/Transition";
 import { useRef } from "react";
 
 const gridContainerVariants = {

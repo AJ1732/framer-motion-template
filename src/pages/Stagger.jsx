@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Transition from "../components/Transition";
+import Transition from "../components/ui/Transition";
 
 const gridContainerVariants = {
   hidden: { opacity: 0 },

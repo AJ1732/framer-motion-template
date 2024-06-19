@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { TopScroll } from "../components/TopScroll";
+import { TopScroll } from "../components/ui/TopScroll";
 import App from "../App";
 import Home from "../pages/Home";
 import Stagger from "../pages/Stagger";

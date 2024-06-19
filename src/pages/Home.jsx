@@ -1,4 +1,4 @@
-import Transition from "../components/Transition";
+import Transition from "../components/ui/Transition";
 
 const Home = () => {
   return (
