@@ -8,6 +8,7 @@ import RevealText from "../pages/RevealText";
 import Scroll from "../pages/scroll/Scroll";
 import PageScroll from "../pages/scroll/PageScroll";
 import HorizontalScroll from "../pages/scroll/HorizontalScroll";
+import FlipText from "../pages/FlipText";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: "/reveal",
         element: <RevealText />,
+      },
+      {
+        path: "/flip",
+        element: <FlipText />,
       },
       {
         path: "/scroll",
