@@ -2,9 +2,9 @@ import Flip from "../components/ui/Flip";
 
 const FlipText = () => {
   return (
-    <div>
+    <div className="space-y-4">
       {["Hello", "Wonder"].map((item) => (
-        <Flip>{item}</Flip>
+        <Flip key={item}>{item}</Flip>
       ))}
     </div>
   );
