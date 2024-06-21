@@ -9,6 +9,7 @@ import Scroll from "../pages/scroll/Scroll";
 import PageScroll from "../pages/scroll/PageScroll";
 import HorizontalScroll from "../pages/scroll/HorizontalScroll";
 import FlipText from "../pages/FlipText";
+import EnlargeScroll from "../pages/scroll/EnlargeScroll";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ export const router = createBrowserRouter([
           {
             path: "/scroll/page",
             element: <PageScroll />,
+          },
+          {
+            path: "/scroll/enlarge",
+            element: <EnlargeScroll />,
           },
         ],
       },
