@@ -1,4 +1,5 @@
 import SpotLightButton from "../components/ui/SpotLightButton";
+import Transition from "../components/ui/Transition";
 
 const Buttons = () => {
   return (
@@ -7,4 +8,4 @@ const Buttons = () => {
     </div>
   );
 };
-export default Buttons;
+export default Transition(Buttons);

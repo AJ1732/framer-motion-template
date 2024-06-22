@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, MotionConfig } from "framer-motion";
+import Transition from "../components/ui/Transition";
 
 const HamburgerIcon = () => {
   const [active, setActive] = useState(false);
@@ -72,4 +73,4 @@ const Hamburger = () => {
     </div>
   );
 };
-export default Hamburger;
+export default Transition(Hamburger);

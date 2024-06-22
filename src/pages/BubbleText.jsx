@@ -1,4 +1,5 @@
 import Bubble from "../components/ui/Bubble";
+import Transition from "../components/ui/Transition";
 
 const BubbleText = () => {
   return (
@@ -7,4 +8,4 @@ const BubbleText = () => {
     </section>
   );
 };
-export default BubbleText;
+export default Transition(BubbleText);

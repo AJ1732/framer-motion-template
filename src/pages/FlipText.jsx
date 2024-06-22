@@ -1,4 +1,5 @@
 import Flip from "../components/ui/Flip";
+import Transition from "../components/ui/Transition";
 
 const FlipText = () => {
   return (
@@ -9,4 +10,4 @@ const FlipText = () => {
     </div>
   );
 };
-export default FlipText;
+export default Transition(FlipText);
