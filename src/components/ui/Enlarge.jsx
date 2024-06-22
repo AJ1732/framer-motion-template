@@ -17,7 +17,7 @@ const Enlarge = ({ item }) => {
       ref={ref}
       style={{
         scale: scaleProgress,
-        opacity: scrollYProgress,
+        opacity: opacityProgress,
       }}
       className="min-h-80 w-full rounded bg-zinc-500 px-4 py-3"
     >
