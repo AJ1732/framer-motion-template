@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const DropMenu = () => {
-  const navlinks = ["Stagger", "Basic", "Reveal", "Scroll", "Flip", "Bubble", "Hamburger", "Buttons"]
+  const navlinks = ["Stagger", "Basic", "Text", "Scroll", "Hamburger", "Buttons"]
 
   return (
     <div className='h-fit w-64 bg-neutral-800 p-1 rounded-md shadow-xl'>

@@ -4,15 +4,13 @@ import App from "../App";
 import Home from "../pages/Home";
 import Stagger from "../pages/Stagger";
 import Basic from "../pages/Basic";
-import RevealText from "../pages/RevealText";
 import Scroll from "../pages/scroll/Scroll";
 import PageScroll from "../pages/scroll/PageScroll";
 import HorizontalScroll from "../pages/scroll/HorizontalScroll";
-import FlipText from "../pages/FlipText";
 import EnlargeScroll from "../pages/scroll/EnlargeScroll";
-import BubbleText from "../pages/BubbleText";
 import Hamburger from "../pages/Hamburger";
 import Buttons from "../pages/Buttons";
+import Text from "../pages/text/Text";
 
 export const router = createBrowserRouter([
   {
@@ -37,16 +35,8 @@ export const router = createBrowserRouter([
         element: <Basic />,
       },
       {
-        path: "/reveal",
-        element: <RevealText />,
-      },
-      {
-        path: "/flip",
-        element: <FlipText />,
-      },
-      {
-        path: "/bubble",
-        element: <BubbleText />,
+        path: "/text",
+        element: <Text />,
       },
       {
         path: "/hamburger",
