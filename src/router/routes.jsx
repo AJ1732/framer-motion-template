@@ -12,6 +12,7 @@ import FlipText from "../pages/FlipText";
 import EnlargeScroll from "../pages/scroll/EnlargeScroll";
 import BubbleText from "../pages/BubbleText";
 import Hamburger from "../pages/Hamburger";
+import Buttons from "../pages/Buttons";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "/hamburger",
         element: <Hamburger />,
+      },
+      {
+        path: "/buttons",
+        element: <Buttons />,
       },
       {
         path: "/scroll",
