@@ -1,5 +1,5 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { TopScroll } from "../components/ui/TopScroll";
+import { TopScroll } from "../components/util/TopScroll";
 import App from "../App";
 import Home from "../pages/Home";
 import Stagger from "../pages/Stagger";
@@ -10,6 +10,7 @@ import PageScroll from "../pages/scroll/PageScroll";
 import HorizontalScroll from "../pages/scroll/HorizontalScroll";
 import FlipText from "../pages/FlipText";
 import EnlargeScroll from "../pages/scroll/EnlargeScroll";
+import BubbleText from "../pages/BubbleText";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/flip",
         element: <FlipText />,
+      },
+      {
+        path: "/bubble",
+        element: <BubbleText />,
       },
       {
         path: "/scroll",
