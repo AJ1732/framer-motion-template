@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,15 +19,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-} */
-
-
 .content-grid {
   /* spacing variables */
   --padding-inline: 1.5rem;
@@ -42,22 +33,17 @@
   display: grid;
   grid-template-columns:
     [full-width-start]
-    minmax(var(--padding-inline), 1fr) 
-    
-    [breakout-start] 
+    minmax(var(--padding-inline), 1fr)
+    [breakout-start]
     minmax(0, var(--breakout-size))
- 
-
-    [content-start] 
-    min(100% - (var(--padding-inline) * 2), var(--content-max-width)) /* choosing which is smaller */
+    [content-start]
+    min(100% - (var(--padding-inline) * 2), var(--content-max-width))
+    /* choosing which is smaller */
     [content-end]
-
-    minmax(0, var(--breakout-size)) 
+    minmax(0, var(--breakout-size))
     [breakout-end]
-
-    minmax(var(--padding-inline), 1fr) 
-    [full-width-end]
-  ;
+    minmax(var(--padding-inline), 1fr)
+    [full-width-end];
 }
 .content-grid.all {
   grid-template-rows: 4.5rem 1fr;
@@ -72,14 +58,25 @@
   grid-column: full-width;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   @apply text-primary-100;
 }
 
-a, p {
+a,
+p {
   @apply text-primary-50;
 }
 
 .blob {
-  background-image: radial-gradient(closest-side, #F08C0036, #242424);
+  background-image: radial-gradient(closest-side, #f08c0036, #242424);
+}
+
+/* For Card Rotation Gradient */
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
