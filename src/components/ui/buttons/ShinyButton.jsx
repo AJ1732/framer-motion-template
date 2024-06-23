@@ -21,7 +21,7 @@ const ShinyButton = ({ children }) => {
           mass: 0.1,
         },
       }}
-      className="radial-gradient relative rounded-md px-6 py-2"
+      className="radial-gradient relative rounded-md px-6 py-2 transition-all duration-300 active:scale-95 active:shadow active:shadow-neutral-600"
     >
       <span className="linear-mask relative block size-full font-light tracking-wide text-neutral-100">
         {children}
