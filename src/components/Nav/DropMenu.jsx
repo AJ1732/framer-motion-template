@@ -1,23 +1,30 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const DropMenu = () => {
-  const navlinks = ["Stagger", "Basic", "Text", "Scroll", "Hamburger", "Buttons"]
+  const navlinks = [
+    "Stagger",
+    "Basic",
+    "Text",
+    "Scroll",
+    "Hamburger",
+    "Buttons",
+    "Gradient",
+  ];
 
   return (
-    <div className='h-fit w-64 bg-neutral-800 p-1 rounded-md shadow-xl'>
+    <div className="h-fit w-64 rounded-md bg-neutral-800 p-1 shadow-xl">
       <ul>
-        { navlinks.map((navlink, index) => (
-            <NavLink 
-              key={index}  
-              to={`/${navlink.toLowerCase()}`}   
-            >
-              <li className='font-thin text-lg py-2 px-4 rounded hover:bg-primary-500 active:bg-primary-400'>{navlink}</li>
-            </NavLink>
-        )) }
+        {navlinks.map((navlink, index) => (
+          <NavLink key={index} to={`/${navlink.toLowerCase()}`}>
+            <li className="rounded px-4 py-2 text-lg font-thin hover:bg-primary-500 active:bg-primary-400">
+              {navlink}
+            </li>
+          </NavLink>
+        ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default DropMenu
+export default DropMenu;

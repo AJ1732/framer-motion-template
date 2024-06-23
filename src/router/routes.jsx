@@ -11,6 +11,7 @@ import EnlargeScroll from "../pages/scroll/EnlargeScroll";
 import Hamburger from "../pages/Hamburger";
 import Buttons from "../pages/Buttons";
 import Text from "../pages/text/Text";
+import Gradients from "../pages/Gradients";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ export const router = createBrowserRouter([
       {
         path: "/buttons",
         element: <Buttons />,
+      },
+      {
+        path: "/gradient",
+        element: <Gradients />,
       },
       {
         path: "/scroll",
