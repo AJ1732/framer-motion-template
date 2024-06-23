@@ -10,6 +10,7 @@ const DropMenu = () => {
     "Hamburger",
     "Buttons",
     "Gradient",
+    "GridHover",
   ];
 
   return (

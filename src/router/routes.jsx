@@ -12,6 +12,7 @@ import Hamburger from "../pages/Hamburger";
 import Buttons from "../pages/Buttons";
 import Text from "../pages/text/Text";
 import Gradients from "../pages/Gradients";
+import GridHover from "../pages/GridHover";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: "/gradient",
         element: <Gradients />,
+      },
+      {
+        path: "/gridhover",
+        element: <GridHover />,
       },
       {
         path: "/scroll",
