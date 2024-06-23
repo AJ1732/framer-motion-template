@@ -11,7 +11,7 @@ const Gradients = () => {
           </span>
         </header>
 
-        <div className="min-h-80 flex justify-center items-center">
+        <div className="h-96 flex justify-center items-center">
           <AuroraGrad />
         </div>
       </article>

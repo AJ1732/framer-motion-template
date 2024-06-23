@@ -28,7 +28,7 @@ const AuroraGrad = () => {
       style={{
         backgroundImage,
       }}
-      className="relative grid size-full place-items-center gap-4 overflow-hidden bg-gray-500 px-4 py-24 text-gray-200"
+      className="relative flex size-full flex-col items-center justify-center gap-4 overflow-hidden bg-gray-500 px-4 py-24 text-gray-200"
     >
       <span className="font-semibold uppercase text-neutral-300">
         Aurora Gradient
