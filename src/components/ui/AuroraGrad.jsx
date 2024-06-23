@@ -5,7 +5,7 @@ import {
   animate,
 } from "framer-motion";
 import { useEffect } from "react";
-import AuroraButton from "./AuroraButton";
+import AuroraButton from "./buttons/AuroraButton";
 
 // rgb(250 176 5)
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "DD335C"];

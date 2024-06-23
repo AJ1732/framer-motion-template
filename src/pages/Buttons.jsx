@@ -1,5 +1,5 @@
-import SpotLightButton from "../components/ui/SpotLightButton";
-import AuroraButton from "../components/ui/AuroraButton";
+import SpotLightButton from "../components/ui/buttons/SpotLightButton";
+import AuroraButton from "../components/ui/buttons/AuroraButton";
 import Transition from "../components/ui/Transition";
 
 const Buttons = () => {
