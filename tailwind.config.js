@@ -39,6 +39,9 @@ export default {
           500: "#637c54",
         },
       },
+      gridTemplateColumns: {
+        20: "repeat(20, minmax(0, 1fr))",
+      },
       animation: {
         // For Card Rotation Gradient
         rotation: "rotation 10s linear infinite",
