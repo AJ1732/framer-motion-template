@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -29,12 +26,16 @@ export default {
           700: "#495057",
           800: "#343A40",
           900: "#212529",
-        }
-      }
+        },
+        roow: {
+          100: "#052b2f",
+          200: "#073438",
+          300: "#0e4b50",
+          400: "#2d8f85",
+          500: "#637c54",
+        },
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-selector-patterns'),
-  ],
-}
-
+  plugins: [require("tailwindcss-selector-patterns")],
+};
