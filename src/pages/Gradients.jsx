@@ -1,4 +1,4 @@
-import RadialGrad from "../components/ui/RadialGrad";
+import AuroraGrad from "../components/ui/AuroraGrad";
 
 const Gradients = () => {
   return (
@@ -7,12 +7,12 @@ const Gradients = () => {
       <article>
         <header>
           <span className="font-semibold uppercase text-neutral-500">
-            Radial Gradient
+            Radial Gradients
           </span>
         </header>
 
         <div className="min-h-80 flex justify-center items-center">
-          <RadialGrad />
+          <AuroraGrad />
         </div>
       </article>
     </section>
