@@ -1,4 +1,4 @@
-import Reveal2 from "../../components/ui/Reveal2";
+import Reveal2 from "../../components/ui/text/Reveal2";
 
 const Reveal2Text = () => {
   return (

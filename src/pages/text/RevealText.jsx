@@ -1,6 +1,4 @@
-import React from "react";
-import Reveal from "../../components/ui/Reveal";
-import Transition from "../../components/ui/Transition";
+import Reveal from "../../components/ui/text/Reveal";
 
 const RevealText = () => {
   return (
@@ -27,4 +25,4 @@ const RevealText = () => {
   );
 };
 
-export default Transition(RevealText);
+export default RevealText;
