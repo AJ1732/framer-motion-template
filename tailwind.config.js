@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        gradient:
+          "conic-gradient(from var(--gradient-angle), #FFD43B, #FAB005, #F08C00, #FAB005, #FFD43B)",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
@@ -33,6 +37,17 @@ export default {
           300: "#0e4b50",
           400: "#2d8f85",
           500: "#637c54",
+        },
+      },
+      animation: {
+        // For Card Rotation Gradient
+        rotation: "rotation 10s linear infinite",
+      },
+      keyframes: {
+        // For Card Rotation Gradient
+        rotation: {
+          "0%": { "--gradient-angle": "0deg" },
+          "100%": { "--gradient-angle": "360deg" },
         },
       },
     },
