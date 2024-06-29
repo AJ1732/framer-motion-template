@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import Navbar from "./components/nav/Navbar";
+import Navbar from "./components/navigation/Navbar";
 
 function App() {
   return (
