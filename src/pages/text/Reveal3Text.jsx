@@ -10,13 +10,13 @@ const Reveal3Text = () => {
       </header>
 
       <article className="flex flex-col items-start justify-center gap-2 sm:flex-row">
-        <Reveal3>
-          <p>
+        <p>
+          <Reveal3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nulla
             architecto excepturi nesciunt reiciendis eum recusandae quae? Vitae,
             accusantium facilis.
-          </p>
-        </Reveal3>
+          </Reveal3>
+        </p>
       </article>
     </section>
   );
