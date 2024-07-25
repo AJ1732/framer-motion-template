@@ -6,7 +6,7 @@ const GridHover = () => {
 
   return (
     <section className="relative flex size-full items-center justify-center">
-      <div className="flex flex-wrap justify-center h-dvh w-full overflow-y-clip">
+      <div className="flex h-dvh w-full flex-wrap justify-center overflow-y-clip">
         {/* Grid Background */}
         {tiles.map((tile, i) => (
           <Tile key={i} />
