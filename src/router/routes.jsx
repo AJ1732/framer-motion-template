@@ -13,6 +13,7 @@ import Buttons from "../pages/Buttons";
 import Text from "../pages/text/Text";
 import Gradients from "../pages/Gradients";
 import GridHover from "../pages/GridHover";
+import InViewScroll from "../pages/scroll/InViewScroll";
 
 export const router = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ export const router = createBrowserRouter([
           {
             path: "/scroll/enlarge",
             element: <EnlargeScroll />,
+          },
+          {
+            path: "/scroll/inview",
+            element: <InViewScroll />,
           },
         ],
       },
