@@ -23,6 +23,11 @@ const links = [
     link: "/scroll/inview",
     text: "InView Scroll"
   },
+  {
+    id: 5,
+    link: "/scroll/marquee",
+    text: "Marquee"
+  },
 ]
 const Scroll = () => {
   return (

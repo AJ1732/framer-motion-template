@@ -14,6 +14,7 @@ import Text from "../pages/text/Text";
 import Gradients from "../pages/Gradients";
 import GridHover from "../pages/GridHover";
 import InViewScroll from "../pages/scroll/InViewScroll";
+import Marquee from "../pages/scroll/Marquee";
 
 export const router = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ export const router = createBrowserRouter([
           {
             path: "/scroll/inview",
             element: <InViewScroll />,
+          },
+          {
+            path: "/scroll/marquee",
+            element: <Marquee />,
           },
         ],
       },

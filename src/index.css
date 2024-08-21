@@ -68,7 +68,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:  hsl(var(--primary));
+  background-color: hsl(var(--primary));
 }
 
 /* ::-webkit-scrollbar-track, */
@@ -83,9 +83,8 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color:  hsl(var(--primary));
+  background-color: hsl(var(--primary));
 }
-
 
 h1,
 h2,
@@ -149,4 +148,14 @@ p {
     linear-gradient(black, black);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
+}
+
+.x-gradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
