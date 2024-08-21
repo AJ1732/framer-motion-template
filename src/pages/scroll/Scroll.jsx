@@ -19,7 +19,7 @@ const links = [
     text: "Enlarge Scroll"
   },
   {
-    id: 3,
+    id: 4,
     link: "/scroll/inview",
     text: "InView Scroll"
   },
@@ -27,8 +27,8 @@ const links = [
 const Scroll = () => {
   return (
     <main className="space-y-4">
-      <nav>
-        <ul className="flex items-center justify-start divide-shade-800 border-b border-shade-800 pb-4 [&>*]:px-5">
+      <nav className="">
+        <ul className="flex items-center justify-start overflow-x-scroll divide-shade-800 border-b border-shade-800 pb-4 [&>*]:px-5">
           {links.map(({id, link, text}) => (
             <Link
               key={id}
